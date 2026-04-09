@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard — Responsiveness Exercise</title>
+     <link rel="stylesheet" href="../build/output.css">
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+      h1,
+      h2,
+      .brand {
+        font-family: "Syne", sans-serif;
+      }
+    </style>
+
+   
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen">
+    <!-- ── LAYOUT WRAPPER ── -->
+    <div class="flex h-screen overflow-hidden">
+      <aside
+        class="w-64 bg-slate-900 border-r border-slate-800 flex flex-col shrink-0 overflow-y-auto"
+      >
+        <!-- Brand -->
+        <div class="h-16 flex items-center px-6 border-b border-slate-800">
+          <span class="brand text-xl text-white tracking-tight"
+            >⬡ &nbsp;iFly Digital</span
+          >
+        </div>
+
+        <!-- Nav -->
+        <nav class="flex-1 px-3 py-6 space-y-1">
+          <p
+            class="px-3 mb-2 text-xs font-semibold uppercase tracking-widest text-slate-500"
+          >
+            Main
+          </p>
+
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg bg-violet-600 text-white text-sm font-medium"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+            Dashboard
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            Users
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            Products
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+            Revenue
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+            Analytics
+          </a>
+
+          <p
+            class="px-3 mt-5 mb-2 text-xs font-semibold uppercase tracking-widest text-slate-500"
+          >
+            System
+          </p>
+
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"
+              />
+            </svg>
+            Settings
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 text-sm font-medium transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            Logs
+          </a>
+        </nav>
+
+        <!-- User profile at bottom -->
+        <div
+          class="px-4 py-4 border-t border-slate-800 flex items-center gap-3"
+        >
+          <img
+            src="../images/ruf.jpg"
+            class="w-8 h-8 rounded-full ring-2 ring-violet-500"
+            alt="avatar"
+          />
+          <div class="min-w-0">
+            <p class="text-sm font-medium text-white truncate">Kapnang Rufus</p>
+            <p class="text-xs text-slate-400 truncate">admin@rufus.io</p>
+          </div>
+        </div>
+      </aside>
+      <!-- END SIDEBAR -->
+
+      <!-- ════════════════════════════════════════
+         MAIN CONTENT
+    ════════════════════════════════════════ -->
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <!-- ── HEADER ── -->
+        <header
+          class="h-16 bg-slate-900 border-b border-slate-800 px-8 flex items-center justify-between shrink-0"
+        >
+          <div>
+            <h1 class="text-lg font-bold text-white">Dashboard Overview</h1>
+          </div>
+
+          <!-- Search -->
+          <div class="flex items-center gap-3">
+            <div class="relative">
+              <svg
+                class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search…"
+                class="bg-slate-800 text-sm text-slate-100 placeholder-slate-500 rounded-lg pl-9 pr-4 py-2 w-56 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500"
+              />
+            </div>
+
+            <!-- Notifications -->
+            <button
+              class="relative p-2 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+              <span
+                class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-violet-500"
+              ></span>
+            </button>
+
+            <img
+              src="../images/ruf.jpg"
+              class="w-8 h-8 rounded-full ring-2 ring-violet-500 cursor-pointer"
+              alt="avatar"
+            />
+          </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- ── SCROLLABLE PAGE BODY ── -->
+        <main class="flex-1 overflow-y-auto px-8 py-8 space-y-8">
+          <!-- Welcome -->
+          <div>
+            <h2 class="text-2xl font-bold text-white">
+              Good morning, Rufus
+            </h2>
+            <p class="text-slate-400 text-sm mt-1">
+              Here's what's happening with your platform today.
+            </p>
+          </div>
+
+          <!-- ── STATS CARDS (4 columns — needs to be made responsive) ── -->
+          <div class="grid grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <p class="text-sm text-slate-400 font-medium">Total Users</p>
+                <span class="p-2 bg-violet-500/10 rounded-lg">
+                  <svg
+                    class="w-4 h-4 text-violet-400"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                  </svg>
+                </span>
+              </div>
+              <p class="text-3xl font-bold text-white">24,830</p>
+              <p class="text-xs text-emerald-400 mt-1">▲ 12.5% vs last month</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <p class="text-sm text-slate-400 font-medium">Revenue</p>
+                <span class="p-2 bg-emerald-500/10 rounded-lg">
+                  <svg
+                    class="w-4 h-4 text-emerald-400"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <line x1="12" y1="1" x2="12" y2="23" />
+                    <path
+                      d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <p class="text-3xl font-bold text-white">$91,240</p>
+              <p class="text-xs text-emerald-400 mt-1">▲ 8.1% vs last month</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <p class="text-sm text-slate-400 font-medium">
+                  Active Sessions
+                </p>
+                <span class="p-2 bg-sky-500/10 rounded-lg">
+                  <svg
+                    class="w-4 h-4 text-sky-400"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                </span>
+              </div>
+              <p class="text-3xl font-bold text-white">3,412</p>
+              <p class="text-xs text-rose-400 mt-1">▼ 2.3% vs last month</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <p class="text-sm text-slate-400 font-medium">New Orders</p>
+                <span class="p-2 bg-amber-500/10 rounded-lg">
+                  <svg
+                    class="w-4 h-4 text-amber-400"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                    />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                  </svg>
+                </span>
+              </div>
+              <p class="text-3xl font-bold text-white">1,058</p>
+              <p class="text-xs text-emerald-400 mt-1">▲ 5.7% vs last month</p>
+            </div>
+          </div>
+          <!-- END STATS CARDS -->
+
+          <!-- ── BOTTOM SECTION: TABLE + ACTIVITY (2 cols — needs to be made responsive) ── -->
+          <div class="grid grid-cols-3 gap-6">
+            <!-- Recent Orders Table (takes 2/3) -->
+            <div
+              class="col-span-2 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden"
+            >
+              <div
+                class="px-6 py-4 border-b border-slate-800 flex items-center justify-between"
+              >
+                <h2 class="text-sm font-semibold text-white">Recent Orders</h2>
+                <a
+                  href="#"
+                  class="text-xs text-violet-400 hover:text-violet-300 transition-colors"
+                  >View all →</a
+                >
+              </div>
+              <table class="w-full text-sm">
+                <thead>
+                  <tr
+                    class="text-left text-xs text-slate-500 uppercase tracking-wider border-b border-slate-800"
+                  >
+                    <th class="px-6 py-3 font-medium">Order</th>
+                    <th class="px-6 py-3 font-medium">Customer</th>
+                    <th class="px-6 py-3 font-medium">Product</th>
+                    <th class="px-6 py-3 font-medium">Amount</th>
+                    <th class="px-6 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800">
+                  <tr class="hover:bg-slate-800/50 transition-colors">
+                    <td class="px-6 py-4 text-slate-400">#4821</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="../images/ruf.jpg"
+                          class="w-6 h-6 rounded-full"
+                        />
+                        <span class="text-white">Lena Müller</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-slate-300">Pro Plan</td>
+                    <td class="px-6 py-4 text-white font-medium">$120.00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 py-1 rounded-full text-xs bg-emerald-500/10 text-emerald-400"
+                        >Paid</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50 transition-colors">
+                    <td class="px-6 py-4 text-slate-400">#4820</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="../images/ruf.jpg"
+                          class="w-6 h-6 rounded-full"
+                        />
+                        <span class="text-white">James Park</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-slate-300">Starter Plan</td>
+                    <td class="px-6 py-4 text-white font-medium">$39.00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 py-1 rounded-full text-xs bg-amber-500/10 text-amber-400"
+                        >Pending</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50 transition-colors">
+                    <td class="px-6 py-4 text-slate-400">#4819</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="../images/ruf.jpg"
+                          class="w-6 h-6 rounded-full"
+                        />
+                        <span class="text-white">Amara Diallo</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-slate-300">Enterprise</td>
+                    <td class="px-6 py-4 text-white font-medium">$499.00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 py-1 rounded-full text-xs bg-emerald-500/10 text-emerald-400"
+                        >Paid</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50 transition-colors">
+                    <td class="px-6 py-4 text-slate-400">#4818</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="../images/ruf.jpg"
+                          class="w-6 h-6 rounded-full"
+                        />
+                        <span class="text-white">Carlos Vera</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-slate-300">Pro Plan</td>
+                    <td class="px-6 py-4 text-white font-medium">$120.00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 py-1 rounded-full text-xs bg-rose-500/10 text-rose-400"
+                        >Failed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50 transition-colors">
+                    <td class="px-6 py-4 text-slate-400">#4817</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="../images/ruf.jpg"
+                          class="w-6 h-6 rounded-full"
+                        />
+                        <span class="text-white">Yuki Tanaka</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 text-slate-300">Starter Plan</td>
+                    <td class="px-6 py-4 text-white font-medium">$39.00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 py-1 rounded-full text-xs bg-emerald-500/10 text-emerald-400"
+                        >Paid</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Activity Feed (takes 1/3) -->
+            <div
+              class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden"
+            >
+              <div class="px-6 py-4 border-b border-slate-800">
+                <h2 class="text-sm font-semibold text-white">
+                  Recent Activity
+                </h2>
+              </div>
+              <ul class="divide-y divide-slate-800 px-6">
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-violet-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      New user
+                      <span class="text-white font-medium">Lena Müller</span>
+                      signed up.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">2 minutes ago</p>
+                  </div>
+                </li>
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-emerald-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      Order
+                      <span class="text-white font-medium">#4819</span> was
+                      marked as paid.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">14 minutes ago</p>
+                  </div>
+                </li>
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-rose-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      Payment failed for
+                      <span class="text-white font-medium">Carlos Vera</span>.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">1 hour ago</p>
+                  </div>
+                </li>
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-amber-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      Server CPU usage spiked to
+                      <span class="text-white font-medium">89%</span>.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">2 hours ago</p>
+                  </div>
+                </li>
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-sky-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      Backup completed successfully.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">5 hours ago</p>
+                  </div>
+                </li>
+                <li class="py-4 flex items-start gap-3">
+                  <span
+                    class="mt-0.5 w-2 h-2 rounded-full bg-violet-500 shrink-0"
+                  ></span>
+                  <div>
+                    <p class="text-sm text-slate-300">
+                      <span class="text-white font-medium">Amara Diallo</span>
+                      upgraded to Enterprise.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5">Yesterday</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END BOTTOM SECTION -->
+        </main>
+        <!-- END PAGE BODY -->
+      </div>
+      <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END LAYOUT WRAPPER -->
+  </body>
+</html>
